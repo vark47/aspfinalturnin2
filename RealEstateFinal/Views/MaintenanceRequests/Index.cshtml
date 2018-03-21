@@ -1,0 +1,30 @@
+﻿@model IEnumerable<RealEstateFinal.Models.MaintenanceRequest>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+@foreach (var item in Model)
+{
+
+
+    <div class="card" style="width:75%">
+
+        <div class="card-body">
+            <h1 class="card-title">@Html.DisplayFor(modelItem => item.Requestor)</h1>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">@Html.DisplayFor(modelItem => item.PropertyAddress)</li>
+            <li class="list-group-item">@Html.DisplayFor(modelItem => item.UnitNumber)</li>
+            <li class="list-group-item"> @Html.DisplayFor(modelItem => item.Description)</li>
+            <li class="list-group-item">@Html.DisplayFor(modelItem => item.DateRequested)</li>
+        </ul>
+        <div class="card-body">
+
+            <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+        </div>
+        <br />
+        <br />
+    </div>
+}

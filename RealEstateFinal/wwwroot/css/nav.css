@@ -1,0 +1,467 @@
+﻿style > .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover, body {
+    background: url(https://s3.amazonaws.com/menumaker-assets/body_background.jpg) top left
+}
+
+.angular-ui-tree-hidden, .maker footer {
+    display: none
+}
+
+.angular-ui-tree-handle, .comments .trigger, .comments .trigger:hover, .sp-cancel {
+    text-decoration: none
+}
+
+@font-face {
+    font-family: Balthazar;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Balthazar Regular'),local('Balthazar-Regular'),url(https://fonts.gstatic.com/s/balthazar/v5/E9s_OrHc1N8XyvXr2y-jyqCWcynf_cDxXwCLxiixG1c.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'),local('OpenSans-Light'),url(https://fonts.gstatic.com/s/opensans/v14/DXI1ORHCpsQm3Vp6mXoaTYnF5uFdDttMLvmWuJdhhgs.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'),local('OpenSans-Regular'),url(https://fonts.gstatic.com/s/opensans/v14/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans SemiBold'),local('OpenSans-SemiBold'),url(https://fonts.gstatic.com/s/opensans/v14/MTP_ySUJH_bn48VBG8sNSonF5uFdDttMLvmWuJdhhgs.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'),local('OpenSans-Bold'),url(https://fonts.gstatic.com/s/opensans/v14/k3k702ZOKiLJc3WVjuplzInF5uFdDttMLvmWuJdhhgs.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Open Sans Light Italic'),local('OpenSans-LightItalic'),url(https://fonts.gstatic.com/s/opensans/v14/PRmiXeptR36kaC0GEAetxrfB31yxOzP-czbf6AAKCVo.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Open Sans Italic'),local('OpenSans-Italic'),url(https://fonts.gstatic.com/s/opensans/v14/xjAJXh38I15wypJXxuGMBp0EAVxt0G0biEntp43Qt6E.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 600;
+    src: local('Open Sans SemiBold Italic'),local('OpenSans-SemiBoldItalic'),url(https://fonts.gstatic.com/s/opensans/v14/PRmiXeptR36kaC0GEAetxi8cqLH4MEiSE0ROcU-qHOA.ttf) format('truetype')
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Balthazar,Georgia
+}
+
+body {
+    font-family: 'Open Sans',sans-serif;
+    font-style: normal
+}
+
+.main {
+    padding-bottom: 80px
+}
+
+.panel-title {
+    font-size: 18px
+}
+
+.header-element {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px
+}
+
+.header-filters {
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(0,0,0,.05);
+    box-shadow: inset 0 0 3px rgba(0,0,0,.3);
+    margin: 20px 0
+}
+
+.angular-ui-tree-empty {
+    border: 1px dashed #bbb;
+    min-height: 100px;
+    background-color: #e5e5e5;
+    background-image: -webkit-linear-gradient(45deg,#fff 25%,transparent 0,transparent 75%,#fff 0,#fff),-webkit-linear-gradient(45deg,#fff 25%,transparent 0,transparent 75%,#fff 0,#fff);
+    background-image: linear-gradient(45deg,#fff 25%,transparent 0,transparent 75%,#fff 0,#fff),linear-gradient(45deg,#fff 25%,transparent 0,transparent 75%,#fff 0,#fff);
+    background-size: 60px 60px;
+    background-position: 0 0,30px 30px
+}
+
+.angular-ui-tree-nodes {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+    .angular-ui-tree-nodes .angular-ui-tree-nodes {
+        padding-left: 20px
+    }
+
+.angular-ui-tree-node, .angular-ui-tree-placeholder {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 20px;
+    line-height: 20px
+}
+
+.angular-ui-tree-placeholder {
+    margin: 5px 0;
+    padding: 0;
+    min-height: 30px
+}
+
+.angular-ui-tree-handle {
+    cursor: move;
+    box-sizing: border-box;
+    min-height: 20px;
+    line-height: 20px;
+    margin: 0 0 10px;
+    background: #dbdbdb;
+    color: #6f6f6f;
+    padding: 7px
+}
+
+.checkout.test .payment-select label:hover, .sp-alpha-handle, .sp-dragger, .sp-replacer, .sp-slider {
+    cursor: pointer
+}
+
+.angular-ui-tree-handle:hover {
+    color: #fff;
+    background: #a3a3a3
+}
+
+.angular-ui-tree-drag {
+    position: absolute;
+    pointer-events: none;
+    z-index: 999;
+    opacity: .8
+}
+
+tr.angular-ui-tree-empty {
+    height: 100px
+}
+
+.group-title {
+    background-color: #687074 !important;
+    color: #FFF !important
+}
+
+.tree-node {
+    border-radius: 5px;
+    overflow: hidden
+}
+
+    .tree-node.tree-node-content {
+        position: relative
+    }
+
+.Modal-backdrop, .Modal-holder {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0
+}
+
+.tree-node .delete {
+    margin: 0 0 0 5px
+}
+
+.nodrop {
+    background-color: #f2dede
+}
+
+.tree-node-content {
+    margin: 0 0 10px
+}
+
+.tree-handle {
+    padding: 10px;
+    background: #428bca;
+    color: #FFF;
+    margin-right: 10px
+}
+
+.angular-ui-tree-placeholder {
+    background: #f0f9ff;
+    border: 2px dashed #bed2db;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.Modal-backdrop {
+    background: #000;
+    z-index: 1;
+    opacity: .5
+}
+
+.Modal-holder {
+    background: 0 0;
+    z-index: 2;
+    padding: 30px 15px
+}
+
+.Modal-box {
+    margin: 0 auto;
+    width: 100%;
+    background: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.3);
+    position: relative
+}
+
+@media screen and (min-width:992px) {
+    .Modal-box {
+        width: 50%;
+        padding: 30px
+    }
+}
+
+.maker .admin-css {
+    margin-top: 40px;
+    position: relative
+}
+
+    .maker .admin-css .btn {
+        position: absolute;
+        top: 10px;
+        right: 40px
+    }
+
+.maker .screen-ctrl {
+    margin: 0 0 25px
+}
+
+.maker .structure .add-tree-node {
+    margin-bottom: 15px
+}
+
+.maker .modal-premium {
+    width: 400px
+}
+
+.maker .premium-modal {
+    padding: 35px
+}
+
+    .maker .premium-modal .btn {
+        width: 100%;
+        padding: 10px 0
+    }
+
+    .maker .premium-modal h2 {
+        color: #42a3c0;
+        padding: 0 0 25px;
+        margin: 0 0 30px;
+        border-bottom: 1px solid #f0f0f0;
+        background: 0 0;
+        font-size: 30px;
+        line-height: 1;
+        font-weight: 300
+    }
+
+        .maker .premium-modal h2 p {
+            display: inline-block;
+            float: right
+        }
+
+        .maker .premium-modal h2 span {
+            font-size: 14px
+        }
+
+    .maker .premium-modal ul {
+        padding: 0;
+        margin: 0 0 40px
+    }
+
+    .maker .premium-modal li {
+        padding: 0;
+        margin: 0 0 25px;
+        color: #5f5f5f;
+        font-size: 16px;
+        line-height: 16px;
+        list-style: none
+    }
+
+        .maker .premium-modal li i {
+            color: #999
+        }
+
+.row.settings .panel {
+    float: left;
+    margin-right: 15px
+}
+
+.row.settings .panel-body {
+    height: 120px
+}
+
+.row.settings .options .left {
+    padding-left: 0
+}
+
+.row.settings .options .right {
+    padding-right: 0
+}
+
+.row.settings .options .btn {
+    width: 125px;
+    margin-bottom: 15px;
+    display: block
+}
+
+.row.settings .action .btn {
+    display: block;
+    width: 100%;
+    margin: 0 0 15px
+}
+
+.row.settings .theme .theme-select span {
+    height: 75px;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: left;
+    top: 0;
+    overflow: hidden
+}
+
+.row.settings .theme .theme-select img {
+    height: auto;
+    width: 150px
+}
+
+.row.settings .theme .dropdown-toggle {
+    height: 89px
+}
+
+.theme-modal .modal-body {
+    background: #f9f9f9
+}
+
+    .theme-modal .modal-body .col-md-9 {
+        max-height: 500px;
+        overflow-y: scroll
+    }
+
+.theme-modal .theme-list {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+    .theme-modal .theme-list li {
+        padding: 5px 5px 10px;
+        margin: 0 3% 3% 0;
+        list-style: none;
+        float: left;
+        width: 30%;
+        position: relative;
+        background: #fff;
+        box-shadow: 0 1px 2px rgba(0,0,0,.3);
+        border-radius: 2px;
+        overflow: hidden;
+        border: 1px solid #ccc
+    }
+
+        .theme-modal .theme-list li:hover {
+            box-shadow: 0 1px 2px rgba(0,0,0,.6)
+        }
+
+        .theme-modal .theme-list li .meta {
+            padding: 5px;
+            margin: 0 -5px -10px;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 1;
+            color: #555;
+            background-color: #eee;
+            border-top: 1px solid #ccc;
+            border-radius: 0 0 2px 2px
+        }
+
+nav.navbar, nav.navbar .navbar-collapse {
+    border: none
+}
+
+.theme-modal .theme-list li a {
+    width: 200px;
+    height: 100px;
+    margin: 0;
+    display: block;
+    overflow: hidden
+}
+
+@media (min-width:1200px) {
+    .theme-modal .modal-dialog {
+        width: 1000px
+    }
+}
+
+.icons {
+    position: relative
+}
+
+.icon-modal {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 100
+}
+
+    .icon-modal .modal-dialog {
+        width: 500px;
+        margin: 0
+    }
+
+    .icon-modal .icon-container {
+        padding: 5px;
+        overflow-y: scroll;
+        height: 250px
+    }
+
+    .icon-modal .icon {
+        color: #616161
+    }
+
+        .icon-modal .icon i {
+            font-size: 22px;
+            line-height: 1.3;
+            width: 1.4em
+        }
+
+        .icon-modal .icon:hover {
+            color: #000
+        }
+
+.admin .theme-list .thumbnail {
+    width: auto;
+    height: 40px;
+    margin: 0
+}
+

@@ -1,0 +1,46 @@
+﻿@model RealEstateFinal.Models.MaintenanceRequest
+
+@{
+    ViewData["Title"] = "Create";
+}
+<div style="position: relative; left: 25%;">
+<h1>Submit a Maintenance Request Below</h1>
+<p>Have problems? Complain below and we will promptly ignore you</p>
+
+<div class="row" >
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" ></div>
+            <div>
+                <label >Name</label>
+                <input asp-for="Requestor"  />
+                <span asp-validation-for="Requestor" ></span>
+            </div>
+            <div >
+                <label >Address</label>
+                <input asp-for="PropertyAddress"  />
+                <span asp-validation-for="PropertyAddress"> </span>
+            </div>
+            <div >
+                <label  >Unit Number</label>
+                <input asp-for="UnitNumber"  />
+                <span asp-validation-for="UnitNumber" ></span>
+            </div>
+            <div >
+                <label >Please Give a BRIEF Description of the Problem We Will Be Ignoring</label>
+                <textarea asp-for="Description"  ></textarea>
+                <span asp-validation-for="Description" ></span>
+            </div>
+            <div >
+                <label >Please Give the Date That the Problem Started</label>
+                <input asp-for="DateRequested"  />
+                <span asp-validation-for="DateRequested" ></span>
+            </div>
+            <div >
+                <input type="submit" value="Create" />
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+

@@ -1,0 +1,47 @@
+﻿@model IEnumerable<RealEstateFinal.Models.Listing>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@{
+
+    //uses the day of the week as an int to determine which listing is the listing of the day,
+    //if it is past Friday then a random listing is chosen because the office is closed anyway
+    DateTime ClockInfoFromSystem = DateTime.Now;
+    Random rnd = new Random();
+    int list = (int)ClockInfoFromSystem.DayOfWeek;
+    if (list > 5)
+    {
+        list = rnd.Next(1, 6);
+
+    }
+}
+
+
+<h1> Listing of the day</h1>
+@foreach (var item in Model)
+{
+    if (item.ID == list)
+    {
+
+        <br />
+        <br />
+        <div class="card" style="width:75%">
+            <img class="card-img-top" style="width:75%" src="@Html.DisplayFor(modelItem => item.ImgURL)" alt="Image of house #@item.ID">
+            <div class="card-body">
+                <h1 class="card-title">@Html.DisplayFor(modelItem => item.Title)</h1>
+            </div>
+            <ul class="list-group list-group-flush">
+
+                <li class="list-group-item"> @Html.DisplayFor(modelItem => item.Body)</li>
+                <li class="list-group-item">@Html.DisplayFor(modelItem => item.Rent)</li>
+            </ul>
+
+            <br />
+            <br />
+        </div>
+    }
+}
+
+

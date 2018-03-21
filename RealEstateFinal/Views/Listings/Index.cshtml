@@ -1,0 +1,74 @@
+﻿@model IEnumerable<RealEstateFinal.Models.Listing>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<br />
+<br />
+<form asp-controller="Listings" asp-action="Index">
+    <p>
+        Search By Listing Title: <input type="text" name="SearchString">
+        <input type="submit" value="SHOW ME WHAT YOU GOT!" />
+    </p>
+</form>
+<br />
+<br />
+
+@foreach (var item in Model)
+{
+
+    @if (item.AvailableNow == true)
+    {
+        <div class="card" style="width:75%; background-color: green;">
+            <img class="card-img-top" style="width:75%" src="@Html.DisplayFor(modelItem => item.ImgURL)" alt="Image of house">
+            <div class="card-body">
+                <h1 class="card-title">@Html.DisplayFor(modelItem => item.Title)</h1>
+            </div>
+            <ul class="list-group list-group-flush">
+
+                <li class="list-group-item"> @Html.DisplayFor(modelItem => item.Body)</li>
+                <li class="list-group-item">$@Html.DisplayFor(modelItem => item.Rent)</li>
+            </ul>
+            <div class="card-body">
+
+                <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-warning active">Edit Listing</a>
+                <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger active">Delete Listing</a>
+            </div>
+
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+    }
+    else
+    {
+        <div class="card" style="width:75%; background-color: red;">
+            <img class="card-img-top" style="width:75%" src="@Html.DisplayFor(modelItem => item.ImgURL)" alt="Image of house">
+            <div class="card-body">
+                <h1 class="card-title">@Html.DisplayFor(modelItem => item.Title)</h1>
+            </div>
+            <ul class="list-group list-group-flush">
+
+                <li class="list-group-item"> @Html.DisplayFor(modelItem => item.Body)</li>
+                <li class="list-group-item">$@Html.DisplayFor(modelItem => item.Rent)</li>
+            </ul>
+            <div class="card-body">
+
+                <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-warning active">Edit Listing</a>
+                <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger active">Delete Listing</a>
+            </div>
+
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+
+    }
+
+}
+
+<p>
+    <a asp-action="CreateListing" class="btn btn-danger success">New Listing</a>
+</p>
