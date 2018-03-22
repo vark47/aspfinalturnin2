@@ -26,24 +26,17 @@ namespace RealEstateFinal.Controllers
             return View();
         }
 
-        /* *************************** *
-         * User account administration *
-         * *************************** */
-
+       
         public ViewResult ShowAccounts()
         {
             return View(userManager.Users);
         }
 
 
-        // Action methods that modify the database
 
         public ViewResult CreateAccount() => View();
 
      
-        /* ******************* *
-         * Role administration *
-         * ******************* */
 
         public ViewResult ShowRoles() => View(roleManager.Roles);
 

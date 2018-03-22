@@ -73,7 +73,7 @@ namespace RealEstateFinal.Controllers
         
         [HttpPost]
 
-      //  [ValidateAntiForgeryToken]
+     
         public async Task<IActionResult> Create([Bind("ID,Body,Title,Rent,ImgURL,Beds,Baths,AvailableNow")] Listing listing)
         {
             if (ModelState.IsValid)
@@ -106,7 +106,6 @@ namespace RealEstateFinal.Controllers
         }
         [HttpPost]
 
-       // [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ID,Body,Title,Rent,ImgURL,Beds,Baths,AvailableNow")] Listing listing)
         {
             if (id != listing.ID)
@@ -166,7 +165,7 @@ namespace RealEstateFinal.Controllers
         }
 
         [HttpPost, ActionName("Delete")]
-      // Testing something found in docs, remove for release [ValidateAntiForgeryToken]
+   
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var listing = await dbcontxt.Listings.SingleOrDefaultAsync(m => m.ID == id);
